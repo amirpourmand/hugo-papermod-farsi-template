@@ -1,9 +1,9 @@
 baseURL: https://papermod-farsi.netlify.app
-languageCode: 'fa'
-defaultContentLanguage: 'fa'
-title: 'یک قالب وبلاگ'
+languageCode: "fa"
+defaultContentLanguage: "fa"
+title: "قالب وبلاگ تستی من"
 theme: "PaperMod"
-paginate: 5
+paginate: 10
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -78,15 +78,15 @@ params:
   homeInfoParams:
     Title: سلام امیر پورمند هستم
     Content: >
-        سلام اینجا قدری درباره همه چیز می‌نویسم
+      سلام اینجا قدری درباره همه چیز می‌نویسم
 
   socialIcons:
     - name: twitter
       url: "https://twitter.com/pourmand_amir"
     - name: stackoverflow
       url: "https://stackoverflow.com/"
-    - name: github
-      url: "https://github.com/pourmand1376"
+    - name: Telegram
+      url: "https://t.me/myTelegramAcount"
 
   analytics:
     google:
@@ -117,7 +117,6 @@ params:
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
 
-
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
@@ -130,9 +129,8 @@ markup:
     # style: monokai
 
 permalinks:
-# https://gohugo.io/content-management/urls/
-    posts: "/:filename/"
-    
+  # https://gohugo.io/content-management/urls/
+  posts: "/:filename/"
 
 menu:
   main:
@@ -144,13 +142,17 @@ menu:
       name: آرشیو
       url: /archives/
       weight: 30
+    - identifier: test
+      name: تستی
+      url: /text/
+      weight: 25
 
 languages:
-    fa:
-        languageName: "farsi"
-        weight: 1
-        languagedirection: rtl
-        taxonomies:
-          category: categories
-          tag: fatags
-          series: series
+  fa:
+    languageName: "farsi"
+    weight: 1
+    languagedirection: rtl
+    taxonomies:
+      category: categories
+      tag: fatags
+      series: series
