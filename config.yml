@@ -1,4 +1,4 @@
-baseURL: https://papermod-farsi.netlify.app
+baseURL: https://test-hugo-dwk.pages.dev/
 languageCode: "fa"
 defaultContentLanguage: "fa"
 title: "قالب وبلاگ تستی من"
@@ -127,10 +127,6 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
-
-permalinks:
-  # https://gohugo.io/content-management/urls/
-  posts: "/:filename/"
 
 menu:
   main:
